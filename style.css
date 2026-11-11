@@ -1,0 +1,163 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #050b20;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #101a38;
+}
+
+header h2 {
+  color: #65e8ff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 12px;
+}
+
+nav a:hover {
+  color: #65e8ff;
+}
+
+.hero {
+  min-height: 450px;
+  padding: 130px 20px;
+  background: radial-gradient(
+    circle, #253d76, #050b20 70%
+  );
+}
+
+.hero h1 {
+  font-size: 45px;
+  color: #65e8ff;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  color: #b7c6e5;
+}
+
+.btn {
+  display: inline-block;
+  background: #65e8ff;
+  color: #071329;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: white;
+}
+
+section {
+  padding: 65px 20px;
+}
+
+section h1 {
+  margin-bottom: 20px;
+  color: #65e8ff;
+}
+
+.upload {
+  margin: 30px auto;
+}
+
+.upload label {
+  display: block;
+  margin: 15px;
+}
+
+input {
+  padding: 12px;
+  background: #152447;
+  color: white;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.images div {
+  background: #111d3c;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.images img {
+  width: 300px;
+  height: 220px;
+  object-fit: contain;
+  margin-top: 15px;
+  background: #020716;
+  border-radius: 8px;
+  display: block;
+}
+
+#result {
+  margin-top: 25px;
+  color: #65e8ff;
+}
+
+#about p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+  color: #bdc9e1;
+}
+
+footer {
+  background: #101a38;
+  padding: 35px;
+  color: #aebbd6;
+  line-height: 2;
+}
+
+footer h2 {
+  color: #65e8ff;
+}
+
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .images img {
+    width: 260px;
+  }
+}
