@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SKYBLINK - Space Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>✦ SKYBLINK</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#explorer">Explorer</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>EXPLORE THE UNKNOWN</h1>
+    <h2>Discover the secrets of our universe</h2>
+    <p>SPHEREx Time-Travel Sky Explorer</p>
+    <a href="#explorer" class="btn">Start Exploring</a>
+  </section>
+
+  <section id="explorer">
+    <h1>SPACE IMAGE COMPARISON</h1>
+    <p>Upload two space images to compare.</p>
+
+    <div class="upload">
+      <label>Observation A</label>
+      <input type="file" id="imageA" accept="image/*">
+
+      <label>Observation B</label>
+      <input type="file" id="imageB" accept="image/*">
+    </div>
+
+    <div class="images">
+      <div>
+        <h3>Observation A</h3>
+        <img id="previewA" alt="Observation A preview">
+      </div>
+      <div>
+        <h3>Observation B</h3>
+        <img id="previewB" alt="Observation B preview">
+      </div>
+    </div>
+
+    <button class="btn" id="compareBtn">Compare Images</button>
+    <h2 id="result">Waiting for images...</h2>
+  </section>
+
+  <section id="about">
+    <h1>ABOUT SPHEREx</h1>
+    <p>
+      NASA's SPHEREx mission studies the universe
+      using 102 near-infrared wavelength bands.
+      SKYBLINK is a student prototype for exploring
+      and comparing astronomical images.
+    </p>
+  </section>
+
+  <footer>
+    <h2>✦ SKYBLINK</h2>
+    <p>Explore Space. Discover More.</p>
+    <p>NASA Space Apps Challenge 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
